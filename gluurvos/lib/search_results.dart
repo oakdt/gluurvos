@@ -12,7 +12,7 @@ class SocialMediaResults extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: const EdgeInsets.symmetric(vertical: 40),
+      padding: const EdgeInsets.symmetric(vertical: 80), // Increased top padding
       children: [
         // Searched username at top
         Padding(
@@ -21,16 +21,16 @@ class SocialMediaResults extends StatelessWidget {
             '@$searchQuery',
             textAlign: TextAlign.center,
             style: const TextStyle(
-              fontSize: 28,
+              fontSize: 32, // Increased from 28
               color: Color(0xFF787569),
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
         
-        const SizedBox(height: 20),
+        const SizedBox(height: 40),
 
-        // Platform cards
+        // platform cards
         _PlatformCard(
           platform: 'X',
           url: 'https://x.com/$searchQuery',
@@ -102,19 +102,22 @@ class _PlatformCard extends StatelessWidget {
             ],
           ),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start, // Changed from center
             children: [
-              Image.asset(
-                imagePath,
-                width: 28,
-                height: 28,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0), // Added padding
+                child: Image.asset(
+                  imagePath,
+                  width: 32, // Increased from 28
+                  height: 32, // Increased from 28
+                ),
               ),
-              const SizedBox(width: 15),
               Text(
                 platform,
                 style: const TextStyle(
-                  fontSize: 18,
+                  fontSize: 22, // Increased from 18
                   color: Color(0xFF787569),
+                  fontWeight: FontWeight.w500, // Added medium weight
                 ),
               ),
             ],
