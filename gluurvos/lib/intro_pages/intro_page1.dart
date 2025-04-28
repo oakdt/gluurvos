@@ -19,9 +19,10 @@ class IntroPage1 extends StatelessWidget {
                 'Welcome to Gluurvos!',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 32,
                   fontFamily: 'Georgia',
                   fontWeight: FontWeight.bold,
+                  color: const Color(0xFF787569),
                 )
               ),
             ),

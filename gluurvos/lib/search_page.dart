@@ -16,7 +16,6 @@ class ResultsPage extends StatelessWidget {
         color: const Color(0xFFEDE8D0),
         child: Stack(
           children: [
-            // Back button at the top
             Positioned(
               top: 40,
               left: 10,
@@ -30,10 +29,9 @@ class ResultsPage extends StatelessWidget {
               ),
             ),
 
-            // Results area
             SocialMediaResults(searchQuery: searchQuery),
 
-            // Search bar at bottom
+            // bottom search bar
             Positioned(
               bottom: 20,
               left: 20,

@@ -19,9 +19,10 @@ class IntroPage2 extends StatelessWidget {
                 'Search across multiple social media apps!',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 32,
                   fontFamily: 'Georgia',
                   fontWeight: FontWeight.bold,
+                  color: const Color(0xFF787569),
                 )
               ),
             ),

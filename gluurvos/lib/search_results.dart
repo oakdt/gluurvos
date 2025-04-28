@@ -12,19 +12,21 @@ class SocialMediaResults extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: const EdgeInsets.symmetric(vertical: 80), // Increased top padding
+      padding: const EdgeInsets.symmetric(vertical: 80),
       children: [
-        // Searched username at top
+
+        // searched username
         Padding(
           padding: const EdgeInsets.all(20.0),
           child: Text(
             '@$searchQuery',
             textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 32, // Increased from 28
-              color: Color(0xFF787569),
+            style: TextStyle(
+              fontSize: 32,
+              fontFamily: 'Georgia',
               fontWeight: FontWeight.bold,
-            ),
+              color: const Color(0xFF787569),
+            )
           ),
         ),
         
@@ -102,22 +104,22 @@ class _PlatformCard extends StatelessWidget {
             ],
           ),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.start, // Changed from center
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0), // Added padding
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Image.asset(
                   imagePath,
-                  width: 32, // Increased from 28
-                  height: 32, // Increased from 28
+                  width: 32,
+                  height: 32,
                 ),
               ),
               Text(
                 platform,
                 style: const TextStyle(
-                  fontSize: 22, // Increased from 18
+                  fontSize: 22,
                   color: Color(0xFF787569),
-                  fontWeight: FontWeight.w500, // Added medium weight
+                  fontWeight: FontWeight.w500,
                 ),
               ),
             ],
